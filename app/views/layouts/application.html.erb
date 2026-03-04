@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Abdulla Achilov | Senior Ruby on Rails Developer | 12+ Years Experience</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Senior Ruby on Rails Developer with 12+ years building scalable back-end systems, APIs, and leading engineering teams. Based in Warsaw, Poland. Available for new opportunities.">
+    <meta name="keywords" content="Ruby on Rails Developer, Senior Software Engineer, Back-End Developer, API Development, PostgreSQL, Redis, Docker, AWS, Warsaw Poland">
+    <meta name="author" content="Abdulla Achilov">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abdulla Achilov | Senior Ruby on Rails Developer">
+    <meta property="og:description" content="12+ years building scalable back-end systems, APIs, and leading engineering teams. Open to new opportunities.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://abdullaachilov.com">
+    <meta property="profile:first_name" content="Abdulla">
+    <meta property="profile:last_name" content="Achilov">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Abdulla Achilov | Senior Ruby on Rails Developer">
+    <meta name="twitter:description" content="12+ years building scalable back-end systems. Open to opportunities.">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="canonical" href="https://abdullaachilov.com">
+
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abdulla Achilov",
+      "jobTitle": "Senior Ruby on Rails Developer",
+      "url": "https://abdullaachilov.com",
+      "sameAs": [
+        "https://github.com/abdullaachilov",
+        "https://www.linkedin.com/in/abdulla-achilov-aa4260183/",
+        "https://www.toptal.com/resume/abdulla-achilov"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Warsaw",
+        "addressCountry": "PL"
+      },
+      "knowsAbout": ["Ruby on Rails", "PostgreSQL", "Redis", "Docker", "AWS", "GraphQL", "Elasticsearch", "CI/CD"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Moscow Technical University of Communications and Informatics"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Crosslake Technologies"
+      }
+    }
+    </script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 antialiased">
+    <%= yield %>
+  </body>
+</html>

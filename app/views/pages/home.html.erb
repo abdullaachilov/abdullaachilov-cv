@@ -1,0 +1,264 @@
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+  <!-- Header -->
+  <header class="mb-10">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Abdulla Achilov</h1>
+        <p class="mt-2 text-xl sm:text-2xl text-indigo-600 font-semibold">Senior Ruby on Rails Developer</p>
+        <p class="mt-1 text-gray-500">Warsaw, Poland</p>
+      </div>
+      <div class="flex flex-col items-start sm:items-end gap-1 text-sm text-gray-600">
+        <a href="mailto:im@abdullaachilov.com" class="hover:text-indigo-600 transition-colors">im@abdullaachilov.com</a>
+        <a href="tel:+48576677480" class="hover:text-indigo-600 transition-colors">+48 576 677 480</a>
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-indigo-600 transition-colors">github.com/abdullaachilov</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-indigo-600 transition-colors">LinkedIn</a>
+      </div>
+    </div>
+    <div class="mt-6 h-1 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-full"></div>
+  </header>
+
+  <!-- Summary -->
+  <section class="mb-10">
+    <p class="text-lg leading-relaxed text-gray-700">
+      Seasoned Ruby on Rails leader with <strong>12+ years</strong> of expertise building high-performance back-end systems,
+      RESTful and GraphQL APIs, and leading distributed engineering teams. Proven track record of delivering scalable
+      architectures serving millions of requests at companies like <strong>Crosslake Technologies</strong>,
+      <strong>Apollo.io</strong>, and <strong>WeSpire</strong>. Strong advocate for test-driven development, CI/CD
+      automation, and clean, maintainable code. Actively contributing to the Ruby ecosystem through open-source gems.
+    </p>
+  </section>
+
+  <!-- Core Skills -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Core Expertise</h2>
+    <div class="flex flex-wrap gap-2">
+      <% %w[Ruby Ruby\ on\ Rails PostgreSQL Redis Sidekiq GraphQL REST\ APIs Elasticsearch
+            Docker AWS CI/CD RSpec TDD Git Nginx Kubernetes Heroku
+            JavaScript React HTML/CSS].each do |skill| %>
+        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">
+          <%= skill %>
+        </span>
+      <% end %>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Professional Experience</h2>
+
+    <!-- Crosslake -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Senior Software Engineer</h3>
+          <p class="text-indigo-600 font-semibold">Crosslake Technologies</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">Jun 2024 &mdash; Present</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Architect and implement Ruby on Rails back-end services for private equity portfolio companies, improving system reliability and performance</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Lead code reviews and establish engineering standards across multiple client engagements, reducing post-deployment defects by 40%</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Design and optimize PostgreSQL database schemas and query patterns, achieving sub-100ms response times on complex data retrieval</li>
+      </ul>
+    </div>
+
+    <!-- Toptal -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Senior Ruby on Rails Developer</h3>
+          <p class="text-indigo-600 font-semibold">Toptal (Top 3% Network)</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">2020 &mdash; 2024</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Delivered back-end solutions for 8+ enterprise clients as a vetted Toptal engineer, consistently earning 5-star reviews</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Built automated sales pipeline and lead parsing systems, processing 50K+ leads daily with background job orchestration</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Developed scheduling platform integrating with Google Calendar API, increasing appointment booking rates by 35%</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Implemented comprehensive test suites with RSpec achieving 95%+ code coverage across all projects</li>
+      </ul>
+    </div>
+
+    <!-- WeSpire -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Senior Back-End Developer</h3>
+          <p class="text-indigo-600 font-semibold">WeSpire</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">2020 &mdash; 2022</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Engineered employee engagement platform features used by Fortune 500 companies, supporting 100K+ active users</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Optimized API endpoints and database queries, reducing average response times by 60% and cutting infrastructure costs</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Designed and implemented RESTful API integrations with third-party HR and wellness platforms</li>
+      </ul>
+    </div>
+
+    <!-- Apollo.io -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Technical Lead</h3>
+          <p class="text-indigo-600 font-semibold">Apollo.io</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">2019 &mdash; 2020</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Led a team of 5 engineers to ship core sales intelligence features, driving product innovation and customer retention</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Architected background job infrastructure processing millions of sales leads and enrichment tasks daily</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Introduced CI/CD pipelines with CircleCI, reducing deployment time from hours to under 15 minutes</li>
+      </ul>
+    </div>
+
+    <!-- ClosedWon -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Ruby on Rails Developer</h3>
+          <p class="text-indigo-600 font-semibold">ClosedWon</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">2018 &mdash; 2019</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Built CRM back-end services with Ruby on Rails, integrating Salesforce and HubSpot APIs for sales automation</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Implemented real-time data synchronization with Redis pub/sub and Sidekiq workers</li>
+      </ul>
+    </div>
+
+    <!-- Earlier career -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Ruby on Rails Developer</h3>
+          <p class="text-indigo-600 font-semibold">Various Companies &amp; Freelance</p>
+        </div>
+        <p class="text-sm text-gray-500 whitespace-nowrap">2012 &mdash; 2018</p>
+      </div>
+      <ul class="mt-3 space-y-2 text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Delivered 20+ web applications for clients across e-commerce, fintech, and SaaS domains</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Built and published multiple open-source Ruby gems for the Rails ecosystem (jscrollpane-rails, chart-js-rails, material_design_icons)</li>
+        <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Developed payment integrations, REST APIs, and full-stack web applications from scratch to production</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Key Projects -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Notable Projects</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+
+      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-gray-900">Dishle</h3>
+        <p class="text-sm text-indigo-600 mb-2">Food Ordering Platform</p>
+        <p class="text-sm text-gray-600">Full-stack food ordering and restaurant management platform. Built real-time order tracking, payment processing, and restaurant dashboard with analytics.</p>
+        <div class="mt-3 flex flex-wrap gap-1">
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">JavaScript</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">PostgreSQL</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Redis</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-gray-900">TripWatch</h3>
+        <p class="text-sm text-indigo-600 mb-2">Travel Monitoring Application</p>
+        <p class="text-sm text-gray-600">Real-time travel monitoring and itinerary management system. Features automated alerts, booking integrations, and collaborative trip planning.</p>
+        <div class="mt-3 flex flex-wrap gap-1">
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">APIs</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Sidekiq</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-gray-900">ByzoneCraft</h3>
+        <p class="text-sm text-indigo-600 mb-2">Gaming Platform</p>
+        <p class="text-sm text-gray-600">Multiplayer gaming platform with server management, real-time communication, and community features. Scaled to handle concurrent user sessions with low latency.</p>
+        <div class="mt-3 flex flex-wrap gap-1">
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Docker</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Redis</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
+        <h3 class="font-bold text-gray-900">Claude-Approver</h3>
+        <p class="text-sm text-indigo-600 mb-2">AI Workflow Automation Tool</p>
+        <p class="text-sm text-gray-600">Developer tool for managing AI-assisted code review and approval workflows. Automates permission management and integrates with CI/CD pipelines.</p>
+        <div class="mt-3 flex flex-wrap gap-1">
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">AI/LLM</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">CI/CD</span>
+          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">GitHub API</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Open Source Contributions</h2>
+    <div class="space-y-3">
+      <div class="flex items-baseline gap-3">
+        <a href="https://github.com/abdullaachilov/jscrollpane-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">jscrollpane-rails</a>
+        <span class="text-sm text-gray-500">jScrollPane plugin packaged as a Rails gem for asset pipeline integration</span>
+      </div>
+      <div class="flex items-baseline gap-3">
+        <a href="https://github.com/abdullaachilov/chart-js-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">chart-js-rails</a>
+        <span class="text-sm text-gray-500">Chart.js library packaged for seamless Rails integration</span>
+      </div>
+      <div class="flex items-baseline gap-3">
+        <a href="https://github.com/abdullaachilov/material_design_icons" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">material_design_icons</a>
+        <span class="text-sm text-gray-500">Material Design Icons packaged as a Rails gem</span>
+      </div>
+      <div class="flex items-baseline gap-3">
+        <a href="https://github.com/abdullaachilov/maksekeskus" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">maksekeskus</a>
+        <span class="text-sm text-gray-500">API integration gem for Make Commerce payment processing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Education</h2>
+    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+      <div>
+        <h3 class="font-bold text-gray-900">Computer Programming</h3>
+        <p class="text-indigo-600">Moscow Technical University of Communications and Informatics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="mb-10">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Languages</h2>
+    <div class="flex gap-6">
+      <div>
+        <span class="font-semibold text-gray-900">Russian</span>
+        <span class="text-sm text-gray-500 ml-1">Native</span>
+      </div>
+      <div>
+        <span class="font-semibold text-gray-900">English</span>
+        <span class="text-sm text-gray-500 ml-1">Fluent</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-6 border-t border-gray-200">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm text-gray-400">
+      <p>Available for new opportunities &mdash; <a href="mailto:im@abdullaachilov.com" class="text-indigo-500 hover:text-indigo-700 transition-colors">Let&apos;s talk</a></p>
+      <div class="flex gap-4">
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">LinkedIn</a>
+        <a href="https://www.toptal.com/resume/abdulla-achilov" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">Toptal</a>
+      </div>
+    </div>
+  </footer>
+
+</div>

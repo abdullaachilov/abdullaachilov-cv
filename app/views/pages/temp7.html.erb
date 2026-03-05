@@ -1,0 +1,226 @@
+<div class="holo-page">
+
+  <a href="/" class="back-link">&larr; back to main</a>
+
+  <!-- Hero -->
+  <div class="holo-card holo-hero">
+    <div class="holo-card-inner">
+      <div class="holo-badge">Holographic</div>
+      <h1>Abdulla Achilov</h1>
+      <p class="title">Senior Software Engineer</p>
+      <p class="sub">Back-End Systems - Database - Performance - Security</p>
+      <p class="loc">Warsaw, Poland</p>
+      <div class="holo-links">
+        <a href="mailto:im@abdullaachilov.com">im@abdullaachilov.com</a>
+        <a href="tel:+48576677480">+48 576 677 480</a>
+        <a href="https://t.me/abdullaachilov" target="_blank" rel="noopener">telegram</a>
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener">github</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener">linkedin</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stat-row">
+    <div class="stat-card"><div class="stat-card-inner">
+      <div class="stat-num">12+</div>
+      <div class="stat-label">Years</div>
+    </div></div>
+    <div class="stat-card"><div class="stat-card-inner">
+      <div class="stat-num">8x</div>
+      <div class="stat-label">Faster Queries</div>
+    </div></div>
+    <div class="stat-card"><div class="stat-card-inner">
+      <div class="stat-num">50K+</div>
+      <div class="stat-label">Leads/Day</div>
+    </div></div>
+    <div class="stat-card"><div class="stat-card-inner">
+      <div class="stat-num">2M+</div>
+      <div class="stat-label">API Calls/Mo</div>
+    </div></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="holo-card">
+    <div class="holo-card-inner">
+      <div class="holo-label">About</div>
+      <p style="font-size:.95rem;line-height:1.8">
+        Senior Software Engineer with <strong style="color:var(--bright)">12+ years</strong> specializing in back-end architecture, database optimization,
+        performance engineering, and application security. Proven track record delivering scalable systems serving millions
+        of requests at <strong style="color:var(--bright)">Crosslake Technologies</strong>, <strong style="color:var(--bright)">Apollo.io</strong>, and <strong style="color:var(--bright)">WeSpire</strong>.
+        Strong advocate for test-driven development, CI/CD automation, and clean, maintainable code.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="holo-card">
+    <div class="holo-card-inner">
+      <div class="holo-label">Core Expertise</div>
+      <div class="holo-skills">
+        <% %w[Ruby Ruby\ on\ Rails PostgreSQL Redis Sidekiq GraphQL REST\ APIs Elasticsearch
+              Docker AWS CI/CD RSpec TDD Git Nginx Kubernetes Heroku
+              JavaScript React HTML/CSS].each do |skill| %>
+          <span class="holo-skill"><%= skill %></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="holo-card">
+    <div class="holo-card-inner">
+      <div class="holo-label">Professional Experience</div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Senior Software Engineer <span class="holo-tl-company">- Crosslake Technologies</span></div>
+          <span class="holo-tl-date">Jun 2024 - Present</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Architect back-end services for PE portfolio companies, reducing system downtime by 35%</li>
+          <li>Lead code reviews and establish engineering standards - post-deployment defects down 40%</li>
+          <li>Redesign PostgreSQL schemas and queries, achieving sub-100ms response times (from 800ms+)</li>
+          <li>Implement security hardening: input validation, rate limiting, vulnerability remediation</li>
+        </ul>
+      </div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Senior Software Engineer <span class="holo-tl-company">- Toptal (Top 3%)</span></div>
+          <span class="holo-tl-date">2020 - 2024</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Delivered back-end solutions for 8+ enterprise clients, consistently earning 5-star reviews</li>
+          <li>Built sales pipeline processing 50K+ leads/day, reducing manual data entry by 90%</li>
+          <li>Developed scheduling platform with Google Calendar API - booking rates up 35%</li>
+          <li>Optimized database-heavy endpoints with query analysis and indexing - P95 latency down 70%</li>
+        </ul>
+      </div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Senior Back-End Developer <span class="holo-tl-company">- WeSpire</span></div>
+          <span class="holo-tl-date">2020 - 2022</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Engineered engagement platform for Fortune 500 companies, supporting 100K+ active users</li>
+          <li>Optimized API and database queries - response times down 60%, infra costs cut $3K/mo</li>
+          <li>Implemented connection pooling and query caching, increasing throughput 45% under peak load</li>
+          <li>Designed third-party HR/wellness API integrations handling 2M+ calls monthly</li>
+        </ul>
+      </div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Technical Lead <span class="holo-tl-company">- Apollo.io</span></div>
+          <span class="holo-tl-date">2019 - 2020</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Led 5 engineers shipping sales intelligence features - customer retention up 25%</li>
+          <li>Architected background jobs processing millions of leads daily, 3x enrichment throughput</li>
+          <li>Introduced CI/CD with CircleCI, reducing deploy time from hours to under 15 minutes</li>
+          <li>Resolved N+1 query bottlenecks across core modules, reducing database load by 50%</li>
+        </ul>
+      </div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Software Engineer <span class="holo-tl-company">- ClosedWon</span></div>
+          <span class="holo-tl-date">2018 - 2019</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Built CRM services integrating Salesforce and HubSpot APIs, automating 80% of sales workflows</li>
+          <li>Implemented real-time sync with Redis pub/sub and Sidekiq - latency from minutes to &lt;2s</li>
+        </ul>
+      </div>
+
+      <div class="holo-tl-item">
+        <div class="holo-tl-header">
+          <div class="holo-tl-role">Software Engineer <span class="holo-tl-company">- Various Companies &amp; Freelance</span></div>
+          <span class="holo-tl-date">2012 - 2018</span>
+        </div>
+        <ul class="holo-tl-bullets">
+          <li>Delivered 20+ web applications across e-commerce, fintech, and SaaS domains</li>
+          <li>Developed payment integrations, REST APIs, and full-stack apps from scratch to production</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="holo-card">
+    <div class="holo-card-inner">
+      <div class="holo-label">Notable Projects</div>
+      <div class="holo-proj-grid">
+        <div class="holo-proj"><div class="holo-proj-inner">
+          <h3>Dishle</h3>
+          <div class="ptype">Wordle for Dishes</div>
+          <div class="plink"><a href="https://dish-le.com" target="_blank" rel="noopener">dish-le.com</a></div>
+          <p>A fun word-guessing game inspired by Wordle, themed around dishes and cuisine.</p>
+          <div class="ptags"><span>Ruby on Rails</span><span>JavaScript</span><span>PostgreSQL</span><span>Redis</span></div>
+        </div></div>
+        <div class="holo-proj"><div class="holo-proj-inner">
+          <h3>TripWatchDeal</h3>
+          <div class="ptype">Travel Monitoring</div>
+          <div class="plink"><a href="https://tripwatchdeal.com" target="_blank" rel="noopener">tripwatchdeal.com</a></div>
+          <p>Real-time travel monitoring with automated alerts and booking integrations.</p>
+          <div class="ptags"><span>Ruby on Rails</span><span>APIs</span><span>Sidekiq</span><span>WebSockets</span></div>
+        </div></div>
+        <div class="holo-proj"><div class="holo-proj-inner">
+          <h3>ByZoneCraft</h3>
+          <div class="ptype">Developer Platform</div>
+          <div class="plink"><a href="https://byzonecraft.com" target="_blank" rel="noopener">byzonecraft.com</a></div>
+          <p>Platform for building and shipping hobby projects fast with infra tooling.</p>
+          <div class="ptags"><span>Ruby on Rails</span><span>Docker</span><span>Redis</span><span>WebSockets</span></div>
+        </div></div>
+        <div class="holo-proj"><div class="holo-proj-inner">
+          <h3>Claude-Approver</h3>
+          <div class="ptype">AI Workflow Tool</div>
+          <div class="plink"><a href="https://www.npmjs.com/package/claude-tg-approver-and-chat" target="_blank" rel="noopener">npmjs.com/claude-tg-approver-and-chat</a></div>
+          <p>AI code review and approval workflows from Telegram chat.</p>
+          <div class="ptags"><span>NPM</span><span>AI/LLM</span><span>CI/CD</span><span>GitHub API</span></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education & Languages -->
+  <div class="holo-card">
+    <div class="holo-card-inner">
+      <div style="display:flex;flex-wrap:wrap;gap:3rem">
+        <div>
+          <div class="holo-label">Education</div>
+          <div class="holo-info">
+            <h3>Master Engineer</h3>
+            <p>Moscow Technical University of Communications and Informatics</p>
+          </div>
+        </div>
+        <div>
+          <div class="holo-label">Languages</div>
+          <div class="holo-langs">
+            <div class="holo-lang"><span class="name">English</span> <span class="level">Fluent</span></div>
+            <div class="holo-lang"><span class="name">Russian</span> <span class="level">Native</span></div>
+            <div class="holo-lang"><span class="name">Polish</span> <span class="level">B1</span></div>
+            <div class="holo-lang"><span class="name">Turkish</span> <span class="level">B1</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="holo-footer">
+    <div class="holo-footer-inner">
+      <p>Available for new opportunities - <a href="mailto:im@abdullaachilov.com">Let's talk</a></p>
+      <div class="holo-footer-links">
+        <a href="https://t.me/abdullaachilov" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.toptal.com/resume/abdulla-achilov" target="_blank" rel="noopener">Toptal</a>
+      </div>
+    </div>
+  </div>
+
+</div>

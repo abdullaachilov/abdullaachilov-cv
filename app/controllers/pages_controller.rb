@@ -22,4 +22,24 @@ class PagesController < ApplicationController
   def temp4
     render layout: "temp4"
   end
+
+  def temp5
+    render layout: "temp5"
+  end
+
+  def temp6
+    render layout: "temp6"
+  end
+
+  def temp7
+    render layout: "temp7"
+  end
+
+  def temp8
+    render layout: "temp8"
+  end
+
+  def temp9
+    render layout: "temp9"
+  end
 end

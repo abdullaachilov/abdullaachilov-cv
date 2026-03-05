@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Abdulla Achilov - Zen CV</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%23333' stroke-width='2'/><circle cx='50' cy='50' r='4' fill='%23333'/></svg>">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --bg: #f8f6f1;
+        --bg-alt: #f0ece4;
+        --text: #2d2a26;
+        --text-dim: #8a857d;
+        --accent: #c4a77d;
+        --accent-dark: #9a7f5a;
+        --line: #ddd6cb;
+        --serif: 'Cormorant Garamond', serif;
+        --sans: 'Inter', sans-serif;
+      }
+
+      body {
+        font-family: var(--sans);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .zen-page {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 4rem 2rem 5rem;
+      }
+
+      .back-link {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: var(--text-dim);
+        text-decoration: none;
+        margin-bottom: 3rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+
+      .back-link:hover { color: var(--text); }
+
+      .badge {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        color: var(--accent-dark);
+        border: 1px solid var(--accent);
+        padding: 0.25rem 0.6rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+
+      /* Hero */
+      .zen-hero {
+        text-align: center;
+        margin-bottom: 5rem;
+        padding: 3rem 0;
+      }
+
+      .zen-hero h1 {
+        font-family: var(--serif);
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.8rem;
+        color: var(--text);
+      }
+
+      .zen-hero .title {
+        font-family: var(--serif);
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--accent-dark);
+        letter-spacing: 0.08em;
+        margin-bottom: 0.3rem;
+      }
+
+      .zen-hero .sub {
+        font-size: 0.8rem;
+        color: var(--text-dim);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 0.3rem;
+      }
+
+      .zen-hero .location {
+        font-size: 0.85rem;
+        color: var(--text-dim);
+      }
+
+      .zen-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .zen-links a {
+        font-size: 0.8rem;
+        color: var(--text-dim);
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        transition: color 0.3s;
+      }
+
+      .zen-links a:hover { color: var(--accent-dark); }
+
+      /* Divider */
+      .zen-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3.5rem 0;
+        gap: 1.5rem;
+      }
+
+      .zen-divider .line {
+        width: 60px;
+        height: 1px;
+        background: var(--line);
+      }
+
+      .zen-divider .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      /* Section */
+      .zen-section { margin-bottom: 3.5rem; }
+
+      .zen-label {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--accent-dark);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      /* Summary */
+      .zen-summary {
+        font-family: var(--serif);
+        font-size: 1.15rem;
+        line-height: 2;
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto;
+        font-weight: 400;
+      }
+
+      .zen-summary strong {
+        font-weight: 600;
+        color: var(--accent-dark);
+      }
+
+      /* Skills */
+      .zen-skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+      }
+
+      .zen-skill {
+        font-size: 0.78rem;
+        padding: 0.35rem 0.9rem;
+        border: 1px solid var(--line);
+        color: var(--text);
+        letter-spacing: 0.03em;
+        transition: all 0.3s;
+      }
+
+      .zen-skill:hover {
+        border-color: var(--accent);
+        color: var(--accent-dark);
+      }
+
+      /* Experience */
+      .zen-exp-item {
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
+
+      .zen-exp-item .role {
+        font-family: var(--serif);
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .zen-exp-item .company {
+        font-family: var(--serif);
+        font-size: 1rem;
+        color: var(--accent-dark);
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .zen-exp-item .date {
+        font-size: 0.75rem;
+        color: var(--text-dim);
+        letter-spacing: 0.1em;
+        margin-top: 0.2rem;
+      }
+
+      .zen-exp-item ul {
+        list-style: none;
+        margin-top: 0.8rem;
+        text-align: left;
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .zen-exp-item ul li {
+        font-size: 0.88rem;
+        padding: 0.25rem 0 0.25rem 1.2rem;
+        position: relative;
+        color: var(--text);
+      }
+
+      .zen-exp-item ul li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.75rem;
+        width: 6px;
+        height: 1px;
+        background: var(--accent);
+      }
+
+      .zen-exp-sep {
+        text-align: center;
+        margin: 1.5rem 0;
+        color: var(--line);
+        font-size: 0.8rem;
+        letter-spacing: 0.5em;
+      }
+
+      /* Projects */
+      .zen-projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .zen-project {
+        padding: 1.5rem;
+        border: 1px solid var(--line);
+        transition: border-color 0.3s;
+      }
+
+      .zen-project:hover { border-color: var(--accent); }
+
+      .zen-project h3 {
+        font-family: var(--serif);
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 0.1rem;
+      }
+
+      .zen-project .ptype {
+        font-size: 0.75rem;
+        color: var(--accent-dark);
+        font-style: italic;
+      }
+
+      .zen-project .plink {
+        font-size: 0.75rem;
+        margin: 0.3rem 0;
+      }
+
+      .zen-project .plink a {
+        color: var(--text-dim);
+        text-decoration: none;
+        border-bottom: 1px solid var(--line);
+        transition: all 0.3s;
+      }
+
+      .zen-project .plink a:hover {
+        color: var(--accent-dark);
+        border-color: var(--accent);
+      }
+
+      .zen-project p {
+        font-size: 0.82rem;
+        color: var(--text-dim);
+        line-height: 1.6;
+      }
+
+      .zen-project .ptags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.6rem;
+      }
+
+      .zen-project .ptags span {
+        font-size: 0.68rem;
+        color: var(--accent-dark);
+        letter-spacing: 0.05em;
+      }
+
+      .zen-project .ptags span:not(:last-child)::after {
+        content: ' /';
+        color: var(--line);
+        margin-left: 0.4rem;
+      }
+
+      /* Education */
+      .zen-edu {
+        text-align: center;
+      }
+
+      .zen-edu h3 {
+        font-family: var(--serif);
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .zen-edu p {
+        font-size: 0.9rem;
+        color: var(--accent-dark);
+        font-style: italic;
+      }
+
+      /* Languages */
+      .zen-langs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .zen-lang .name {
+        font-family: var(--serif);
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .zen-lang .level {
+        font-size: 0.75rem;
+        color: var(--text-dim);
+        margin-left: 0.3rem;
+      }
+
+      /* Footer */
+      .zen-footer {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--line);
+        text-align: center;
+      }
+
+      .zen-footer p {
+        font-size: 0.85rem;
+        color: var(--text-dim);
+      }
+
+      .zen-footer a {
+        color: var(--accent-dark);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .zen-footer a:hover { color: var(--text); }
+
+      .zen-footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+
+      .zen-footer-links a {
+        font-size: 0.8rem;
+        color: var(--text-dim);
+        text-decoration: none;
+        letter-spacing: 0.05em;
+      }
+
+      .zen-footer-links a:hover { color: var(--accent-dark); }
+
+      @media (max-width: 640px) {
+        .zen-page { padding: 2rem 1.5rem 3rem; }
+        .zen-hero { margin-bottom: 3rem; }
+        .zen-projects { grid-template-columns: 1fr; }
+      }
+
+      @media print {
+        .back-link, .badge { display: none; }
+        body { background: white; }
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

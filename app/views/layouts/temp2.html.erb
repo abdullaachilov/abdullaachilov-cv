@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>abdulla@cv:~$ | Terminal CV</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%23111'/><text x='15' y='65' font-size='50' fill='%2300ff41' font-family='monospace'>$_</text></svg>">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --bg: #0a0a0a;
+        --bg-panel: #111111;
+        --green: #00ff41;
+        --green-dim: #00aa2a;
+        --green-dark: #004d15;
+        --cyan: #00e5ff;
+        --amber: #ffb300;
+        --red: #ff3333;
+        --white: #cccccc;
+        --dim: #555555;
+        --border: #222222;
+      }
+
+      body {
+        font-family: 'Fira Code', monospace;
+        background: var(--bg);
+        color: var(--green);
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      /* Scanline effect */
+      body::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0,0,0,0.08) 2px,
+          rgba(0,0,0,0.08) 4px
+        );
+        pointer-events: none;
+        z-index: 100;
+      }
+
+      .terminal {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 1rem 1.5rem 3rem;
+      }
+
+      .back-link {
+        color: var(--dim);
+        text-decoration: none;
+        font-size: 0.85rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+
+      .back-link:hover { color: var(--green); }
+
+      /* Window chrome */
+      .window {
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+        background: var(--bg-panel);
+        overflow: hidden;
+      }
+
+      .window-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        background: #1a1a1a;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .window-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      .window-dot.r { background: #ff5f57; }
+      .window-dot.y { background: #ffbd2e; }
+      .window-dot.g { background: #28c840; }
+
+      .window-title {
+        flex: 1;
+        text-align: center;
+        color: var(--dim);
+        font-size: 0.75rem;
+      }
+
+      .window-body { padding: 1.5rem; }
+
+      /* Prompt */
+      .prompt { color: var(--cyan); }
+      .cmd { color: var(--green); }
+      .flag { color: var(--amber); }
+      .comment { color: var(--dim); font-style: italic; }
+      .output { color: var(--white); }
+      .highlight { color: var(--amber); font-weight: 600; }
+      .error { color: var(--red); }
+
+      .line {
+        padding: 0.15rem 0;
+        word-wrap: break-word;
+      }
+
+      .line-gap { margin-top: 0.8rem; }
+
+      .cursor {
+        display: inline-block;
+        width: 8px;
+        height: 14px;
+        background: var(--green);
+        animation: blink 1s step-end infinite;
+        vertical-align: text-bottom;
+        margin-left: 2px;
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      /* Hero */
+      .ascii-name {
+        color: var(--green);
+        font-size: 0.7rem;
+        line-height: 1.2;
+        white-space: pre;
+        margin: 0.5rem 0;
+        overflow-x: auto;
+      }
+
+      /* Skills as bars */
+      .skill-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.1rem 0;
+      }
+
+      .skill-bar .name {
+        min-width: 140px;
+        color: var(--white);
+      }
+
+      .skill-bar .bar {
+        color: var(--green);
+        letter-spacing: -1px;
+      }
+
+      /* Table-style experience */
+      .exp-table {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+
+      .exp-entry { margin-bottom: 1rem; }
+
+      .exp-entry .header-line {
+        color: var(--cyan);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .exp-entry .role { color: var(--amber); font-weight: 600; }
+      .exp-entry .company { color: var(--green); }
+      .exp-entry .date { color: var(--dim); float: right; }
+
+      .exp-entry ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .exp-entry ul li {
+        color: var(--white);
+        padding: 0.1rem 0;
+      }
+
+      .exp-entry ul li::before {
+        content: '  > ';
+        color: var(--green-dim);
+      }
+
+      /* Project listing */
+      .project-entry {
+        border: 1px solid var(--border);
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+      }
+
+      .project-entry .pname { color: var(--amber); font-weight: 600; }
+      .project-entry .purl { color: var(--cyan); font-size: 0.85rem; }
+      .project-entry .purl a { color: var(--cyan); text-decoration: none; }
+      .project-entry .purl a:hover { text-decoration: underline; }
+      .project-entry .pdesc { color: var(--dim); font-size: 0.85rem; margin-top: 0.2rem; }
+      .project-entry .ptags { color: var(--green-dim); font-size: 0.8rem; margin-top: 0.2rem; }
+
+      /* Footer */
+      .terminal-footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .terminal-footer a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+
+      .terminal-footer a:hover { text-decoration: underline; }
+
+      @media (max-width: 640px) {
+        .ascii-name { font-size: 0.4rem; }
+        .skill-bar .name { min-width: 100px; }
+      }
+
+      @media print {
+        body::after { display: none; }
+        body { background: white; color: #333; }
+        .window { border-color: #ddd; }
+        .window-bar { background: #f5f5f5; border-color: #ddd; }
+        .back-link { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

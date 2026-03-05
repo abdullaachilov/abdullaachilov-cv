@@ -4,24 +4,25 @@
   <header class="mb-10">
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
       <div>
-        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900">Abdulla Achilov</h1>
-        <p class="mt-2 text-lg sm:text-2xl text-indigo-600 font-semibold">Senior Software Engineer</p>
-        <p class="mt-1.5 text-sm text-gray-500">Back-End Systems &bull; Database &bull; Performance &bull; Security</p>
-        <p class="mt-1 text-gray-500">Warsaw, Poland</p>
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Abdulla Achilov</h1>
+        <p class="mt-2 text-lg sm:text-2xl text-indigo-600 dark:text-indigo-400 font-semibold">Senior Software Engineer</p>
+        <p class="mt-1.5 text-sm text-gray-500 dark:text-gray-400">Back-End Systems &bull; Database &bull; Performance &bull; Security</p>
+        <p class="mt-1 text-gray-500 dark:text-gray-400">Warsaw, Poland</p>
       </div>
-      <div class="flex flex-col items-start sm:items-end gap-1 text-sm text-gray-600">
-        <a href="mailto:im@abdullaachilov.com" class="hover:text-indigo-600 transition-colors">im@abdullaachilov.com</a>
-        <a href="tel:+48576677480" class="hover:text-indigo-600 transition-colors">+48 576 677 480</a>
-        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-indigo-600 transition-colors">github.com/abdullaachilov</a>
-        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-indigo-600 transition-colors">LinkedIn</a>
+      <div class="flex flex-col items-start sm:items-end gap-1 text-sm text-gray-600 dark:text-gray-400">
+        <a href="mailto:im@abdullaachilov.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">im@abdullaachilov.com</a>
+        <a href="tel:+48576677480" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">+48 576 677 480</a>
+        <a href="https://t.me/abdullaachilov" target="_blank" rel="noopener" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">t.me/abdullaachilov</a>
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">github.com/abdullaachilov</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">LinkedIn</a>
       </div>
     </div>
-    <div class="mt-6 h-1 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-full"></div>
+    <div class="mt-6 h-1 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-full print:hidden"></div>
   </header>
 
   <!-- Summary -->
   <section class="mb-10">
-    <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+    <p class="text-base sm:text-lg leading-relaxed text-gray-700 dark:text-gray-300">
       Senior Software Engineer with <strong>12+ years</strong> specializing in back-end architecture, database optimization,
       performance engineering, and application security. Proven track record delivering scalable systems serving millions
       of requests at <strong>Crosslake Technologies</strong>, <strong>Apollo.io</strong>, and <strong>WeSpire</strong>.
@@ -31,12 +32,12 @@
 
   <!-- Core Skills -->
   <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Core Expertise</h2>
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">Core Expertise</h2>
     <div class="flex flex-wrap gap-2">
       <% %w[Ruby Ruby\ on\ Rails PostgreSQL Redis Sidekiq GraphQL REST\ APIs Elasticsearch
             Docker AWS CI/CD RSpec TDD Git Nginx Kubernetes Heroku
             JavaScript React HTML/CSS].each do |skill| %>
-        <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">
+        <span class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 shadow-sm print:shadow-none print:border print:border-gray-300">
           <%= skill %>
         </span>
       <% end %>
@@ -45,18 +46,18 @@
 
   <!-- Experience -->
   <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Professional Experience</h2>
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-6">Professional Experience</h2>
 
     <!-- Crosslake -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Senior Software Engineer</h3>
-          <p class="text-indigo-600 font-semibold">Crosslake Technologies</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Senior Software Engineer</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Crosslake Technologies</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">Jun 2024 &mdash; Present</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">Jun 2024 &mdash; Present</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Architect and implement back-end services for private equity portfolio companies, <strong>reducing system downtime by 35%</strong> through improved reliability patterns</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Lead code reviews and establish engineering standards across multiple client engagements, <strong>reducing post-deployment defects by 40%</strong></li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Redesign PostgreSQL database schemas and query patterns, <strong>achieving sub-100ms response times</strong> on complex data retrieval (down from 800ms+)</li>
@@ -65,15 +66,15 @@
     </div>
 
     <!-- Toptal -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Senior Software Engineer</h3>
-          <p class="text-indigo-600 font-semibold">Toptal (Top 3% Network)</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Senior Software Engineer</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Toptal (Top 3% Network)</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">2020 &mdash; 2024</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2020 &mdash; 2024</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Delivered back-end solutions for <strong>8+ enterprise clients</strong> as a vetted Top 3% engineer, consistently earning 5-star reviews</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Built automated sales pipeline processing <strong>50K+ leads daily</strong>, reducing manual data entry by 90% through background job orchestration</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Developed scheduling platform integrating with Google Calendar API, <strong>increasing booking rates by 35%</strong> and reducing no-shows by 20%</li>
@@ -82,15 +83,15 @@
     </div>
 
     <!-- WeSpire -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Senior Back-End Developer</h3>
-          <p class="text-indigo-600 font-semibold">WeSpire</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Senior Back-End Developer</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">WeSpire</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">2020 &mdash; 2022</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2020 &mdash; 2022</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Engineered employee engagement platform features for Fortune 500 companies, <strong>supporting 100K+ active users</strong> with zero-downtime deployments</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Optimized API endpoints and database queries, <strong>reducing average response times by 60%</strong> and cutting monthly infrastructure costs by $3K</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Implemented database connection pooling and query caching, <strong>increasing throughput by 45%</strong> under peak load</li>
@@ -99,15 +100,15 @@
     </div>
 
     <!-- Apollo.io -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Technical Lead</h3>
-          <p class="text-indigo-600 font-semibold">Apollo.io</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Technical Lead</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Apollo.io</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">2019 &mdash; 2020</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2019 &mdash; 2020</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Led a team of 5 engineers shipping core sales intelligence features, <strong>increasing customer retention by 25%</strong></li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Architected background job infrastructure processing <strong>millions of sales leads daily</strong>, improving data enrichment throughput by 3x</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Introduced CI/CD pipelines with CircleCI, <strong>reducing deployment time from hours to under 15 minutes</strong></li>
@@ -116,30 +117,30 @@
     </div>
 
     <!-- ClosedWon -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Software Engineer</h3>
-          <p class="text-indigo-600 font-semibold">ClosedWon</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Software Engineer</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">ClosedWon</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">2018 &mdash; 2019</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2018 &mdash; 2019</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Built CRM back-end services integrating Salesforce and HubSpot APIs, <strong>automating 80% of manual sales workflows</strong></li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Implemented real-time data synchronization with Redis pub/sub and Sidekiq, <strong>reducing sync latency from minutes to under 2 seconds</strong></li>
       </ul>
     </div>
 
     <!-- Earlier career -->
-    <div class="mb-8">
+    <div class="mb-8 break-inside-avoid">
       <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
         <div>
-          <h3 class="text-lg font-bold text-gray-900">Software Engineer</h3>
-          <p class="text-indigo-600 font-semibold">Various Companies &amp; Freelance</p>
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Software Engineer</h3>
+          <p class="text-indigo-600 dark:text-indigo-400 font-semibold">Various Companies &amp; Freelance</p>
         </div>
-        <p class="text-sm text-gray-500 whitespace-nowrap">2012 &mdash; 2018</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2012 &mdash; 2018</p>
       </div>
-      <ul class="mt-3 space-y-2 text-gray-700">
+      <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Delivered 20+ web applications for clients across e-commerce, fintech, and SaaS domains</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Published multiple Ruby gems for the Rails ecosystem, including jscrollpane-rails, chart-js-rails, and material_design_icons</li>
         <li class="flex gap-2"><span class="text-indigo-400 mt-1.5 shrink-0">&bull;</span>Developed payment integrations, REST APIs, and full-stack web applications from scratch to production</li>
@@ -149,58 +150,58 @@
 
   <!-- Key Projects -->
   <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Notable Projects</h2>
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-6">Notable Projects</h2>
     <div class="grid sm:grid-cols-2 gap-4">
 
-      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-gray-900">Dishle</h3>
-        <p class="text-sm text-indigo-600 mb-2">Wordle for Dishes</p>
-        <p class="text-sm text-indigo-600 mb-2 truncate"><a href="https://dish-le.com" target="_blank" rel="noopener" class="hover:text-indigo-800 transition-colors">dish-le.com</a></p>
-        <p class="text-sm text-gray-600">A fun word-guessing game inspired by Wordle, themed around dishes and cuisine. Players guess the daily dish name with visual feedback on each attempt.</p>
+      <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 shadow-sm hover:shadow-md transition-shadow break-inside-avoid print:shadow-none">
+        <h3 class="font-bold text-gray-900 dark:text-white">Dishle</h3>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2">Wordle for Dishes</p>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2 truncate"><a href="https://dish-le.com" target="_blank" rel="noopener" class="hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors">dish-le.com</a></p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">A fun word-guessing game inspired by Wordle, themed around dishes and cuisine. Players guess the daily dish name with visual feedback on each attempt.</p>
         <div class="mt-3 flex flex-wrap gap-1">
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">JavaScript</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">PostgreSQL</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Redis</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">JavaScript</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">PostgreSQL</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Redis</span>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-gray-900">TripWatchDeal</h3>
-        <p class="text-sm text-indigo-600 mb-2">Travel Monitoring Application</p>
-        <p class="text-sm text-indigo-600 mb-2 truncate"><a href="https://tripwatchdeal.com" target="_blank" rel="noopener" class="hover:text-indigo-800 transition-colors">tripwatchdeal.com</a></p>
-        <p class="text-sm text-gray-600">Real-time travel monitoring and itinerary management system. Features automated alerts, booking integrations, and collaborative trip planning.</p>
+      <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 shadow-sm hover:shadow-md transition-shadow break-inside-avoid print:shadow-none">
+        <h3 class="font-bold text-gray-900 dark:text-white">TripWatchDeal</h3>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2">Travel Monitoring Application</p>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2 truncate"><a href="https://tripwatchdeal.com" target="_blank" rel="noopener" class="hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors">tripwatchdeal.com</a></p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Real-time travel monitoring and itinerary management system. Features automated alerts, booking integrations, and collaborative trip planning.</p>
         <div class="mt-3 flex flex-wrap gap-1">
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">APIs</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Sidekiq</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">WebSockets</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">APIs</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Sidekiq</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">WebSockets</span>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-gray-900">ByZoneCraft</h3>
-        <p class="text-sm text-indigo-600 mb-2">Developer Platform</p>
-        <p class="text-sm text-indigo-600 mb-2 truncate"><a href="https://byzonecraft.com" target="_blank" rel="noopener" class="hover:text-indigo-800 transition-colors">byzonecraft.com</a></p>
-        <p class="text-sm text-gray-600">Platform for building and shipping hobby projects fast. Provides infrastructure tooling, deployment pipelines, and project scaffolding so developers can focus on building.</p>
+      <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 shadow-sm hover:shadow-md transition-shadow break-inside-avoid print:shadow-none">
+        <h3 class="font-bold text-gray-900 dark:text-white">ByZoneCraft</h3>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2">Developer Platform</p>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2 truncate"><a href="https://byzonecraft.com" target="_blank" rel="noopener" class="hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors">byzonecraft.com</a></p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Platform for building and shipping hobby projects fast. Provides infrastructure tooling, deployment pipelines, and project scaffolding so developers can focus on building.</p>
         <div class="mt-3 flex flex-wrap gap-1">
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Ruby on Rails</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Docker</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">Redis</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">WebSockets</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Ruby on Rails</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Docker</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">Redis</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">WebSockets</span>
         </div>
       </div>
 
-      <div class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="font-bold text-gray-900">Claude-Approver</h3>
-        <p class="text-sm text-indigo-600 mb-2">AI Workflow Automation Tool</p>
-        <p class="text-sm text-indigo-600 mb-2 truncate"><a href="https://www.npmjs.com/package/claude-tg-approver-and-chat" target="_blank" rel="noopener" class="hover:text-indigo-800 transition-colors">npmjs.com/claude-tg-approver-and-chat</a></p>
-        <p class="text-sm text-gray-600">Developer tool for managing AI-assisted code review and approval workflows from Telegram chat. Automates permission management and integrates with CI/CD pipelines.</p>
+      <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 shadow-sm hover:shadow-md transition-shadow break-inside-avoid print:shadow-none">
+        <h3 class="font-bold text-gray-900 dark:text-white">Claude-Approver</h3>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2">AI Workflow Automation Tool</p>
+        <p class="text-sm text-indigo-600 dark:text-indigo-400 mb-2 truncate"><a href="https://www.npmjs.com/package/claude-tg-approver-and-chat" target="_blank" rel="noopener" class="hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors">npmjs.com/claude-tg-approver-and-chat</a></p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Developer tool for managing AI-assisted code review and approval workflows from Telegram chat. Automates permission management and integrates with CI/CD pipelines.</p>
         <div class="mt-3 flex flex-wrap gap-1">
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">NPM</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">AI/LLM</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">CI/CD</span>
-          <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded-full">GitHub API</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">NPM</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">AI/LLM</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">CI/CD</span>
+          <span class="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs rounded-full">GitHub API</span>
         </div>
       </div>
 
@@ -209,61 +210,62 @@
 
   <!-- Open Source -->
   <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Published Open Source</h2>
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">Published Open Source</h2>
     <div class="space-y-3">
       <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-        <a href="https://github.com/abdullaachilov/jscrollpane-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">jscrollpane-rails</a>
-        <span class="text-sm text-gray-500">jScrollPane plugin packaged as a Rails gem for asset pipeline integration</span>
+        <a href="https://github.com/abdullaachilov/jscrollpane-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors shrink-0">jscrollpane-rails</a>
+        <span class="text-sm text-gray-500 dark:text-gray-400">jScrollPane plugin packaged as a Rails gem for asset pipeline integration</span>
       </div>
       <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-        <a href="https://github.com/abdullaachilov/chart-js-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">chart-js-rails</a>
-        <span class="text-sm text-gray-500">Chart.js library packaged for seamless Rails integration</span>
+        <a href="https://github.com/abdullaachilov/chart-js-rails" target="_blank" rel="noopener" class="font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors shrink-0">chart-js-rails</a>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Chart.js library packaged for seamless Rails integration</span>
       </div>
       <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-        <a href="https://github.com/abdullaachilov/material_design_icons" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">material_design_icons</a>
-        <span class="text-sm text-gray-500">Material Design Icons packaged as a Rails gem</span>
+        <a href="https://github.com/abdullaachilov/material_design_icons" target="_blank" rel="noopener" class="font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors shrink-0">material_design_icons</a>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Material Design Icons packaged as a Rails gem</span>
       </div>
       <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
-        <a href="https://github.com/abdullaachilov/maksekeskus" target="_blank" rel="noopener" class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors shrink-0">maksekeskus</a>
-        <span class="text-sm text-gray-500">API integration gem for Make Commerce payment processing</span>
+        <a href="https://github.com/abdullaachilov/maksekeskus" target="_blank" rel="noopener" class="font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors shrink-0">maksekeskus</a>
+        <span class="text-sm text-gray-500 dark:text-gray-400">API integration gem for Make Commerce payment processing</span>
       </div>
     </div>
   </section>
 
   <!-- Education -->
-  <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Education</h2>
+  <section class="mb-10 break-inside-avoid">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">Education</h2>
     <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
       <div>
-        <h3 class="font-bold text-gray-900">Master Engineer</h3>
-        <p class="text-indigo-600">Moscow Technical University of Communications and Informatics</p>
+        <h3 class="font-bold text-gray-900 dark:text-white">Master Engineer</h3>
+        <p class="text-indigo-600 dark:text-indigo-400">Moscow Technical University of Communications and Informatics</p>
       </div>
     </div>
   </section>
 
   <!-- Languages -->
-  <section class="mb-10">
-    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Languages</h2>
+  <section class="mb-10 break-inside-avoid">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">Languages</h2>
     <div class="flex gap-6">
       <div>
-        <span class="font-semibold text-gray-900">Russian</span>
-        <span class="text-sm text-gray-500 ml-1">Native</span>
+        <span class="font-semibold text-gray-900 dark:text-white">Russian</span>
+        <span class="text-sm text-gray-500 dark:text-gray-400 ml-1">Native</span>
       </div>
       <div>
-        <span class="font-semibold text-gray-900">English</span>
-        <span class="text-sm text-gray-500 ml-1">Fluent</span>
+        <span class="font-semibold text-gray-900 dark:text-white">English</span>
+        <span class="text-sm text-gray-500 dark:text-gray-400 ml-1">Fluent</span>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="pt-6 border-t border-gray-200">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm text-gray-400">
-      <p>Available for new opportunities &mdash; <a href="mailto:im@abdullaachilov.com" class="text-indigo-500 hover:text-indigo-700 transition-colors">Let&apos;s talk</a></p>
+  <footer class="pt-6 border-t border-gray-200 dark:border-gray-700 print:border-gray-300">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm text-gray-400 dark:text-gray-500">
+      <p>Available for new opportunities &mdash; <a href="mailto:im@abdullaachilov.com" class="text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors">Let&apos;s talk</a></p>
       <div class="flex gap-4">
-        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">GitHub</a>
-        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">LinkedIn</a>
-        <a href="https://www.toptal.com/resume/abdulla-achilov" target="_blank" rel="noopener" class="hover:text-gray-600 transition-colors">Toptal</a>
+        <a href="https://t.me/abdullaachilov" target="_blank" rel="noopener" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Telegram</a>
+        <a href="https://github.com/abdullaachilov" target="_blank" rel="noopener" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdulla-achilov-aa4260183/" target="_blank" rel="noopener" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">LinkedIn</a>
+        <a href="https://www.toptal.com/resume/abdulla-achilov" target="_blank" rel="noopener" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">Toptal</a>
       </div>
     </div>
   </footer>

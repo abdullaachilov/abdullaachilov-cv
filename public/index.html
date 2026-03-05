@@ -204,9 +204,9 @@
     /* ======================== THEME BAR ======================== */
 
     .theme-bar{
-      position:fixed;bottom:0;left:0;right:0;z-index:1000;
+      position:fixed;top:0;left:0;right:0;z-index:1000;
       background:rgba(0,0,0,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-      border-top:1px solid rgba(255,255,255,.1);padding:.5rem .8rem;
+      border-bottom:1px solid rgba(255,255,255,.1);padding:.5rem .8rem;
       display:flex;align-items:center;gap:.6rem;overflow-x:auto;
       -webkit-overflow-scrolling:touch;scrollbar-width:none;
     }
@@ -667,7 +667,7 @@
     }
 
     /* Account for theme bar */
-    body{padding-bottom:3rem}
+    body{padding-top:3rem}
 
     /* ======================== PRINT ======================== */
 
